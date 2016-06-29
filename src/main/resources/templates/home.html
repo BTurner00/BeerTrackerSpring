@@ -6,16 +6,18 @@
 </head>
 <body>
 
-<a href="/logout">Logout</a>
+<form action="/logout" method="post">
+    <button type="submit">Logout</button>
+</form>
 
 <br><br>
 
 <a href="/">All</a>
-<a href="/type=Ale">Ales</a>
-<a href="/type=Lager">Lagers</a>
-<a href="/type=Pilsner">Pilsners</a>
-<a href="/type=Stout">Stouts</a>
-<a href="/type=Other">Others</a>
+<a href="/?type=Ale">Ales</a>
+<a href="/?type=Lager">Lagers</a>
+<a href="/?type=Pilsner">Pilsners</a>
+<a href="/?type=Stout">Stouts</a>
+<a href="/?type=Other">Others</a>
 
 <br><br>
 
@@ -26,16 +28,16 @@
 
 <br><br>
 
-<form action="add-beer" method="post">
-    <input type="text" placeholder="Beer Name" name="beername" required/>
-    <select name="beertype" required>
+<form action="/add-beer" method="post">
+    <input type="text" placeholder="Beer Name" name="beerName" required/>
+    <select name="beerType" required>
         <option value="Ale">Ale</option>
         <option value="Lager">Lager</option>
         <option value="Pilsner">Pilsner</option>
         <option value="Stout">Stout</option>
         <option value="Other">Other</option>
     </select>
-    <input type="number" placeholder="Calories" name="beercalories" required/>
+    <input type="number" placeholder="Calories" name="beerCalories" required/>
     <button type="submit">Submit</button>
 </form>
 
