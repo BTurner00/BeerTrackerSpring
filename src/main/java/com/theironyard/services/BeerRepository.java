@@ -1,12 +1,11 @@
 package com.theironyard.services;
 
-import com.sun.tools.javac.util.List;
+
 import com.theironyard.entities.Beer;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
+
 
 
 /**
